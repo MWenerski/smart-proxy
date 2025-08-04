@@ -1,0 +1,16 @@
+[package]
+name = "smart-proxy"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = "0.7"
+tokio = { version = "1", features = ["full"] }
+reqwest = { version = "0.11", features = ["json", "gzip", "stream"] }
+lol_html = "1.2"
+tower = "0.4"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1.0"
+tokio-tungstenite = "0.21"
+dashmap = "5.5"
+
